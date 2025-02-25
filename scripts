@@ -1,9 +1,0 @@
-#!/bin/bash
-echo -e '#!/bin/bash\nchmod +x hello' > permissions/7-everybody
-echo -e '#!/bin/bash\nchmod 007 hello' > permissions/8-James_Bond
-echo -e '#!/bin/bash\nchmod 751 hello' > permissions/9-John_Doe
-echo -e '#!/bin/bash\nchmod --reference=olleh hello' > permissions/10-mirror_permissions
-echo -e '#!/bin/bash\nfind . -type d -exec chmod +x {} \\' > permissions/11-directories_permissions
-echo -e '#!/bin/bash\nmkdir -m 751 my_dir' > permissions/12-directory_permissions
-echo -e '#!/bin/bash\nchgrp school hello' > permissions/13-change_group
-echo -e '#!/bin/bash\nchown vincent:staff *' > permissions/14-change_owner_and_group
